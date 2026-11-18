@@ -1,0 +1,288 @@
+*{
+    margin: 0;
+    padding: 0;
+    background-color: black;
+}
+
+.central{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.pagina{
+    width: 1240px;
+    background-color: #8c40d3c5;
+}
+
+header{
+    display: flex;
+    justify-content: space-between;
+    padding: 15px 25px;
+    box-sizing: border-box;
+}
+
+.img_logo img{
+    width: 120px;
+}
+
+nav a{
+    text-decoration: none;
+    color: white;
+    margin-right: 35px;
+    font-size: 18px;
+    cursor: pointer;
+}
+
+nav a:hover{
+    color: blue;
+}
+
+
+.section1{
+    display: flex;
+    padding: 40px 50px;
+}
+
+.parte_izquierda{
+    margin-right: 250px;
+    animation: texto 800ms ease-in-out;
+}
+
+@keyframes texto {
+    0%{
+        opacity: 0;
+    }
+    50%{
+        transform: translateY(-100);
+    }
+    100%{
+        opacity: 1;
+        translate: translateY(0);
+    }
+}
+
+
+.parte_derecha{
+    margin-right: 100px;
+}
+
+.parte_izquierda span{
+    color: #e0b1e9c5;
+}
+
+.parte_izquierda h1{
+    color: white;
+    font-size: 55px;
+    margin-top: 20px;
+}
+
+.morado_titulo{
+    color: #e6a5f3c5;
+}
+
+.parte_izquierda p{
+    color: grey;
+    font-size: 16px;
+    margin-top: 20px;
+}
+
+.boton{
+    padding: 10px 20px;
+    border-radius: 5px;
+    margin-top: 20px;
+    background-color: #e6a5f3c5;
+    background-image: url(../img/flecha.png);
+    background-size: 12px;
+    background-position: right ;
+    background-repeat: no-repeat;
+    border: none;
+    cursor: pointer;
+    color: white;
+
+}
+
+.boton:hover{
+    transform: scale(1.1);
+    background-color: #e8b9f1c5;
+    transition: 300ms;
+}
+
+.parte_derecha img{
+    width: 200px;
+    animation: mover 3s infinite;
+}
+
+
+@keyframes mover{
+    0%{
+        transform: translateY(0px) rotate(12deg);
+        rotate: (12deg);
+    }
+    50%{
+        transform: translateY(30px) rotate(12deg);
+        rotate: (12deg);
+    }
+    100%{
+        transform: translateY(0px) rotate(12deg);
+        rotate: (12deg);
+    }
+}
+
+.section2{
+    padding: 40px 50px;
+}
+
+.s2_span{
+    color: #e6a5f3c5;
+}
+
+.s2_h1{
+    color: white;
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+
+.tarjetas{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.tarjeta1{
+    padding: 10px;
+    border-radius: 10px;
+    background-color:rgb(37, 2, 83);
+    
+}
+
+.tarjeta2{
+    padding: 10px;
+    border-radius: 10px;
+    background-color:rgb(37, 2, 83);
+    
+}
+
+.tarjeta3{
+    padding: 10px;
+    border-radius: 10px;
+    background-color:rgb(37, 2, 83);
+    
+}
+
+.orbita{
+    width: 100%;
+}
+
+.texto_tar{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+    background-color: rgb(37, 2, 83);
+    align-items: center;
+}
+
+.texto h3{
+    color: white;
+     background-color: rgb(37, 2, 83);
+}
+
+.texto span{
+    color: white;
+    background-color: rgb(37, 2, 83);
+}
+
+.img_text{
+    background-color: rgb(37, 2, 83);
+}
+
+.img_text img{
+    width: 25px;
+}
+
+.footer{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 80px;
+}
+
+
+.footer p{
+    color: grey;
+}
+
+.footer a{
+    color: grey;
+    text-decoration: none;
+}
+
+.tarjetas{
+    opacity: 0;
+    animation: mostrar 1s ease-in-out forwards;
+}
+
+.tarjeta1{
+    animation-delay: 0.2s;
+}
+
+.tarjeta1:hover img{
+    transform: scale(1.1);
+    transition: 0.5s;
+}
+
+.tarjeta2:hover img{
+    transform: scale(1.1) translateY(20px);
+    transition: 0.5s;
+}
+
+.tarjeta3:hover img{
+    transform: scale(1.1);
+    transition: 0.5s;
+}
+
+.tarjeta1:hover{
+    transform: translateY(-10px);
+    transition: 400ms;
+}
+
+.tarjeta2:hover{
+    transform: translateY(-10px);
+    transition: 400ms;
+}
+
+.tarjeta3:hover{
+    transform: translateY(-10px);
+    transition: 400ms;
+}
+
+.tarjeta2{
+    animation-delay: 2s;
+}
+
+.tarjeta3{
+    animation-delay: 5s;
+}
+
+@keyframes mostrar{
+    from{
+        opacity: 0;
+        transform: translateX(0);
+    }
+    to{
+        opacity: 1;
+        transform: translateY(10)
+    }
+}
+
+.s2_subt{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.s2_subt p{
+    color: white;
+}
+
+
